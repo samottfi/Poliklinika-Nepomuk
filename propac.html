@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="utf-8">
+   
+   <title>Poliklinika Nepomuk</title>
+  <link rel="stylesheet" href="styl2.css">
+</head>
+<body> 
+   
+    
+
+    <header>
+    
+   <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <ul id="nav-menu">
+    <li><a href="index.html">Domů</a></li>
+    <li class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown(event)">Ordinace ▾</button>
+      <ul class="dropdown-menu">
+        <li><a href="prak.html">Praktický lékař</a></li>
+        <li><a href="krev.html">Odběr krve</a></li>
+        <li><a href="rtg.html">Rentgen</a></li>
+        <li><a href="ortopedie.html">Ortopedie</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown(event)">Inovace ▾</button>
+      <ul class="dropdown-menu">
+        <li><a href="inovaceprak.html">Praktický lékař</a></li>
+        <li><a href="inovacekrev.html">Odběr krve</a></li>
+        <li><a href="inovacertg.html">Rentgen</a></li>
+        <li><a href="inovaceorto.html">Ortopedie</a></li>
+      </ul>
+    </li>
+  
+<li><a href="propac.html">Pro pacienty</a></li>
+     <li><a href="kontaktdom.html">Kontakt</a></li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+    </header>
+ 
+<main>
+
+      <div class="image-box">
+ <img src="IMG_3284.png" alt="Budova polikliniky">
+  <div class="image-text">
+    <h2>STARÁME SE O VAŠE ZDRAVÍ</h2>
+    <p>
+Poliklinika Nepomuk poskytuje komplexní zdravotní péči pro pacienty všech věkových kategorií. Zaměřuje se na prevenci, diagnostiku i léčbu akutních a chronických onemocnění a klade důraz na profesionální a individuální přístup ke každému pacientovi.
+Součástí polikliniky jsou odborné ambulance různých specializací, které společně zajišťují široké spektrum zdravotních služeb na jednom místě. Díky vzájemné spolupráci jednotlivých lékařů a návaznosti na další zdravotnická zařízení je pacientům poskytována kvalitní a koordinovaná péče.
+Poliklinika je důležitou součástí zdravotních služeb v regionu a usiluje o dostupnou, moderní a bezpečnou zdravotní péči pro všechny pacienty.</p>
+  </div>
+</div>
+
+
+
+
+<section class="patients" id="pro-pacienty" aria-labelledby="patients-title">
+  <div class="patients__container">
+    <header class="patients__header">
+      <h2 class="patients__title" id="patients-title">Pro pacienty</h2>
+      <p class="patients__subtitle">
+        Praktické informace před návštěvou polikliniky. U jednotlivých ambulancí najdete vždy aktuální kontakty a ordinační dobu.
+      </p>
+    </header>
+
+    <div class="patients__grid">
+      <article class="patients__card">
+        <div class="patients__icon" aria-hidden="true"></div>
+        <h3 class="patients__cardTitle">Objednání</h3>
+        <p class="patients__text">
+          Doporučujeme se objednat telefonicky v ordinačních hodinách konkrétní ambulance.
+          V akutních případech ošetřujeme i bez objednání.
+        </p>
+        <ul class="patients__list">
+          <li>Kontakty najdete u každé ambulance</li>
+          <li>Na vyšetření přijďte ideálně s předstihem</li>
+        </ul>
+      </article>
+
+      <article class="patients__card">
+        <div class="patients__icon" aria-hidden="true"></div>
+        <h3 class="patients__cardTitle">Ordinační hodiny</h3>
+        <p class="patients__text">
+          Ordinační doba se liší podle lékaře. Přehled najdete v detailu jednotlivých ambulancí.
+        </p>
+        <ul class="patients__list">
+          <li>Vždy se řiďte ordinační dobou konkrétní ambulance</li>
+          <li>Doporučujeme ověřit změny (dovolená, zástup)</li>
+        </ul>
+      </article>
+
+      <article class="patients__card">
+        <div class="patients__icon" aria-hidden="true"></div>
+        <h3 class="patients__cardTitle">Co si vzít s sebou</h3>
+        <p class="patients__text">
+          Pro hladký průběh vyšetření si přineste základní doklady a případnou dokumentaci.
+        </p>
+        <ul class="patients__list">
+          <li>Kartičku zdravotní pojišťovny</li>
+          <li>Občanský průkaz</li>
+          <li>Doporučení (pokud je potřeba)</li>
+          <li>Seznam užívaných léků</li>
+          <li>Zprávy z předchozích vyšetření</li>
+        </ul>
+      </article>
+
+      <article class="patients__card">
+        <div class="patients__icon" aria-hidden="true"></div>
+        <h3 class="patients__cardTitle">Akutní případy</h3>
+        <p class="patients__text">
+          Při náhlém zhoršení zdravotního stavu kontaktujte příslušnou ambulanci.
+        </p>
+        <div class="patients__callout" role="note">
+          <strong>Život ohrožující stav:</strong> volejte <a href="tel:155">155</a>
+        </div>
+      </article>
+
+      <article class="patients__card">
+        <div class="patients__icon" aria-hidden="true"></div>
+        <h3 class="patients__cardTitle">Dokumenty a potvrzení</h3>
+        <p class="patients__text">
+          Potvrzení a žádosti vyřizujeme dle typu dokumentu. Žádejte prosím s předstihem.
+        </p>
+        <ul class="patients__list">
+          <li>Potvrzení pro zaměstnavatele / školu</li>
+          <li>Výpis ze zdravotní dokumentace</li>
+          <li>Lékařské zprávy a posudky</li>
+        </ul>
+      </article>
+
+      <article class="patients__card">
+        <div class="patients__icon" aria-hidden="true"></div>
+        <h3 class="patients__cardTitle">Práva a povinnosti</h3>
+        <p class="patients__text">
+          Respektujeme soukromí pacientů a platnou legislativu. Prosíme o ohleduplnost vůči ostatním.
+        </p>
+        <ul class="patients__list">
+          <li>Právo na informace a ochranu osobních údajů</li>
+          <li>Možnost nahlížet do zdravotní dokumentace</li>
+          <li>Povinnost sdělit pravdivé údaje o zdravotním stavu</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-contact">
+ 
+      <h2>Petr Svoboda</h2>
+      <p><strong>Telefon:</strong> +420 775 456 789</p>
+      <p><strong>Email:</strong> svoboda.petr@poliklinika.cz</p>
+      <p><strong>Adresa:</strong> Na Vinici III. 487, 335 01 Nepomuk</p>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Poliklinika Nepomuk
+    </div>
+
+  </div>
+</footer>
+      <script>
+function toggleMenu() {
+  const menu = document.getElementById('nav-menu');
+  menu.classList.toggle('show');
+}
+
+// Funkce pro rozbalení konkrétního dropdownu
+function toggleDropdown(event) {
+  event.stopPropagation(); // zabrání zavření jiných dropdownů
+  const dropdown = event.target.nextElementSibling;
+  dropdown.classList.toggle('show');
+}
+
+// zavření dropdownu kliknutím mimo menu
+window.addEventListener('click', function() {
+  const dropdowns = document.querySelectorAll('.dropdown-menu');
+  dropdowns.forEach(menu => menu.classList.remove('show'));
+});
+</script> 
+
+</html>

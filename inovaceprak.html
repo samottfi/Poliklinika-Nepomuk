@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="utf-8">
+   
+   <title>Poliklinika Nepomuk</title>
+  <link rel="stylesheet" href="inovace.css">
+</head>
+<body> 
+   
+    
+
+    <header>
+    
+     <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <ul id="nav-menu">
+    <li><a href="index.html">Domů</a></li>
+    <li class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown(event)">Ordinace ▾</button>
+      <ul class="dropdown-menu">
+        <li><a href="prak.html">Praktický lékař</a></li>
+        <li><a href="krev.html">Odběr krve</a></li>
+        <li><a href="rtg.html">Rentgen</a></li>
+        <li><a href="ortopedie.html">Ortopedie</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown(event)">Inovace ▾</button>
+      <ul class="dropdown-menu">
+        <li><a href="inovaceprak.html">Praktický lékař</a></li>
+        <li><a href="inovacekrev.html">Odběr krve</a></li>
+        <li><a href="inovacertg.html">Rentgen</a></li>
+        <li><a href="inovaceorto.html">Ortopedie</a></li>
+      </ul>
+    </li>
+  <li><a href="propac.html">Pro pacienty</a></li>
+     <li><a href="kontaktdom.html">Kontakt</a></li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+      
+    </header>
+ 
+<main>
+
+      <div class="image-box">
+   <img src="IMG_3284.png" alt="Budova polikliniky">
+  <div class="image-text">
+    <h2>Praktický lékař – Poliklinika Nepomuk</h2>
+    <p>Ordinace praktického lékaře na Poliklinice Nepomuk poskytuje komplexní zdravotní péči pro dospělé pacienty všech věkových kategorií. Dlouhodobě se zaměřuje na prevenci, diagnostiku i léčbu běžných i chronických onemocnění a klade důraz na individuální přístup ke každému pacientovi.
+Ordinace je důležitou součástí zdravotních služeb v regionu a spolupracuje s odbornými ambulancemi i nemocničními zařízeními, aby byla pacientům zajištěna návazná a specializovaná péče.</p>
+  </div>
+</div>
+
+  <section>
+    <h2>Digitalizace zdravotní dokumentace</h2>
+    <ul>
+      <li>Rychlý a bezpečný přístup k anamnéze pacienta</li>
+      <li>Efektivní sdílení informací s odbornými lékaři</li>
+      <li>Optimalizace administrativních procesů</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2> eHealth služby a online komunikace</h2>
+    <ul>
+      <li>Elektronické objednávání a eRecepty</li>
+      <li>Online konzultace a poradenství</li>
+      <li>Rychlá a bezpečná komunikace s ordinací</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Preventivní medicína a management chronických onemocnění</h2>
+    <ul>
+      <li>Systematické preventivní prohlídky</li>
+      <li>Dlouhodobé sledování pacientů s chronickými onemocněními (např. cukrovka, hypertenze)</li>
+      <li>Individuální léčebné plány s cílem minimalizovat riziko komplikací</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2> Koordinace a kontinuita péče</h2>
+    <ul>
+      <li>Komplexní posouzení zdravotního stavu</li>
+      <li>Racionální indikace vyšetření a farmakoterapie</li>
+      <li>Zajištění plynulosti a kvality léčby</li>
+    </ul>
+  </section>
+
+</main>
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-contact">
+ 
+      <h2>Petr Svoboda</h2>
+      <p><strong>Telefon:</strong> +420 775 456 789</p>
+      <p><strong>Email:</strong> svoboda.petr@poliklinika.cz</p>
+      <p><strong>Adresa:</strong> Na Vinici III. 487, 335 01 Nepomuk</p>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Poliklinika Nepomuk
+    </div>
+
+  </div>
+</footer>
+      <script>
+function toggleMenu() {
+  const menu = document.getElementById('nav-menu');
+  menu.classList.toggle('show');
+}
+
+// Funkce pro rozbalení konkrétního dropdownu
+function toggleDropdown(event) {
+  event.stopPropagation(); // zabrání zavření jiných dropdownů
+  const dropdown = event.target.nextElementSibling;
+  dropdown.classList.toggle('show');
+}
+
+// zavření dropdownu kliknutím mimo menu
+window.addEventListener('click', function() {
+  const dropdowns = document.querySelectorAll('.dropdown-menu');
+  dropdowns.forEach(menu => menu.classList.remove('show'));
+});
+</script> 
+</html>
